@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Form Wizard | Bootstrap Based Admin Template - Material Design</title>
+    <title>Basic Form Elements | Bootstrap Based Admin Template - Material Design</title>
     <!-- Favicon-->
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
@@ -21,8 +21,14 @@
     <!-- Animation Css -->
     <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Sweet Alert Css -->
-    <link href="../../plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="../../plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
+    <!-- Wait Me Css -->
+    <link href="../../plugins/waitme/waitMe.css" rel="stylesheet" />
+
+    <!-- Bootstrap Select Css -->
+    <link href="../../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
@@ -278,8 +284,8 @@
                     <img src="../../images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
-                    <div class="email">john.doe@example.com</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Francisco Franco</div>
+                    <div class="email">name@example.com</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
@@ -317,12 +323,7 @@
                             <span>Crear equipos</span>
                         </a>
                     </li>
-                    <li class="">
-                        <a href="crearequipos2.html">
-                            <i class="material-icons">layers</i>
-                            <span>Crear equipos 2</span>
-                        </a>
-                    </li>             
+                                 
                 </ul>
             </div>
             <!-- #Menu -->
@@ -341,94 +342,25 @@
         <!-- Right Sidebar -->
         <aside id="rightsidebar" class="right-sidebar">
             <ul class="nav nav-tabs tab-nav-right" role="tablist">
-                <li role="presentation" class="active"><a href="#skins" data-toggle="tab">SKINS</a></li>
-                <li role="presentation"><a href="#settings" data-toggle="tab">SETTINGS</a></li>
+                <li role="presentation" class="active"><a href="#unidades" data-toggle="tab"><h5>Indice</h5></a></li>
+                <!--<li role="presentation"><a href="#settings" data-toggle="tab">SETTINGS</a></li>-->
             </ul>
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
+                <div role="tabpanel" class="tab-pane fade in active in active" id="unidades">
                     <ul class="demo-choose-skin">
-                        <li data-theme="red" class="active">
-                            <div class="red"></div>
-                            <span>Red</span>
+                        <li>
+                            1.- Resistencia
                         </li>
-                        <li data-theme="pink">
-                            <div class="pink"></div>
-                            <span>Pink</span>
+                        <li class="active">
+                            2.- Velocidad
                         </li>
-                        <li data-theme="purple">
-                            <div class="purple"></div>
-                            <span>Purple</span>
-                        </li>
-                        <li data-theme="deep-purple">
-                            <div class="deep-purple"></div>
-                            <span>Deep Purple</span>
-                        </li>
-                        <li data-theme="indigo">
-                            <div class="indigo"></div>
-                            <span>Indigo</span>
-                        </li>
-                        <li data-theme="blue">
-                            <div class="blue"></div>
-                            <span>Blue</span>
-                        </li>
-                        <li data-theme="light-blue">
-                            <div class="light-blue"></div>
-                            <span>Light Blue</span>
-                        </li>
-                        <li data-theme="cyan">
-                            <div class="cyan"></div>
-                            <span>Cyan</span>
-                        </li>
-                        <li data-theme="teal">
-                            <div class="teal"></div>
-                            <span>Teal</span>
-                        </li>
-                        <li data-theme="green">
-                            <div class="green"></div>
-                            <span>Green</span>
-                        </li>
-                        <li data-theme="light-green">
-                            <div class="light-green"></div>
-                            <span>Light Green</span>
-                        </li>
-                        <li data-theme="lime">
-                            <div class="lime"></div>
-                            <span>Lime</span>
-                        </li>
-                        <li data-theme="yellow">
-                            <div class="yellow"></div>
-                            <span>Yellow</span>
-                        </li>
-                        <li data-theme="amber">
-                            <div class="amber"></div>
-                            <span>Amber</span>
-                        </li>
-                        <li data-theme="orange">
-                            <div class="orange"></div>
-                            <span>Orange</span>
-                        </li>
-                        <li data-theme="deep-orange">
-                            <div class="deep-orange"></div>
-                            <span>Deep Orange</span>
-                        </li>
-                        <li data-theme="brown">
-                            <div class="brown"></div>
-                            <span>Brown</span>
-                        </li>
-                        <li data-theme="grey">
-                            <div class="grey"></div>
-                            <span>Grey</span>
-                        </li>
-                        <li data-theme="blue-grey">
-                            <div class="blue-grey"></div>
-                            <span>Blue Grey</span>
-                        </li>
-                        <li data-theme="black">
-                            <div class="black"></div>
-                            <span>Black</span>
+                        <li>
+                            3.- Técnica
                         </li>
                     </ul>
                 </div>
+
+                <!-- CODE FOR MORE OPTIONS 
                 <div role="tabpanel" class="tab-pane fade" id="settings">
                     <div class="demo-settings">
                         <p>GENERAL SETTINGS</p>
@@ -477,7 +409,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
             </div>
         </aside>
         <!-- #END# Right Sidebar -->
@@ -495,7 +427,9 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>EVALUACIÓN DE VELOCIDAD</h2>
+                            <h2><button type="button" class="btn btn-default waves-effect js-right-sidebar" data-close="true" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">view_list</i>
+                                        </button>EVALUACIÓN DE VELOCIDAD</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -509,54 +443,27 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="body">
-                            <div id="wizard_horizontal">
-                                <h2>Conocimiento</h2>
-                                <section>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas
-                                        arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea
-                                        dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus
-                                        dolor, tristique ac tempus nec, iaculis quis nisi.
-                                    </p>
-                                </section>
-
-                                <h2>Resolución de problemas</h2>
-                                <section>
-                                    <p>
-                                        Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac
-                                        ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi
-                                        tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum,
-                                        nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien
-                                        a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum
-                                        arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
-                                        velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
-                                        iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.
-                                    </p>
-                                </section>
-
-                                <h2>Observación</h2>
-                                <section>
-                                    <p>
-                                        Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo
-                                        condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam.
-                                        Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat.
-                                        Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui
-                                        commodo lectus sollicitudin in auctor mauris venenatis.
-                                    </p>
-                                </section>
-
-                                <h2>Interrogatorio</h2>
-                                <section>
-                                    <p>
-                                        Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula
-                                        vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec
-                                        ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae.
-                                        Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo
-                                        tortor.
-                                    </p>
-                                </section>
-                            </div>
+                       <div class="body">
+                           <h2>Velocidad</h2>
+                           <p>En una escala del <strong>1 al 10</strong> ¿Qué ponderación usted considera para esta persona en esta habilidad?.</p>
+                            <select class="form-control show-tick">
+                                        <option value="">-- 1-10 --</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                            </select>
+                            <br>
+                            <br>
+                            <div style="text-align: center;">
+                            <button id="aceptar" type="button" style="margin:auto; display:block;" class="btn btn-primary m-t-15 waves-effect">Aceptar</button>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -565,7 +472,7 @@
         </div>
     </section>
 
-    <!-- Jquery Core Js -->
+  <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core Js -->
@@ -577,23 +484,30 @@
     <!-- Slimscroll Plugin Js -->
     <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
-    <!-- Jquery Validation Plugin Css -->
-    <script src="../../plugins/jquery-validation/jquery.validate.js"></script>
-
-    <!-- JQuery Steps Plugin Js -->
-    <script src="../../plugins/jquery-steps/jquery.steps.js"></script>
-
-    <!-- Sweet Alert Plugin Js -->
-    <script src="../../plugins/sweetalert/sweetalert.min.js"></script>
-
     <!-- Waves Effect Plugin Js -->
     <script src="../../plugins/node-waves/waves.js"></script>
 
+    <!-- Autosize Plugin Js -->
+    <script src="../../plugins/autosize/autosize.js"></script>
+
+    <!-- Moment Plugin Js -->
+    <script src="../../plugins/momentjs/moment.js"></script>
+
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="../../plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
     <!-- Custom Js -->
     <script src="../../js/admin.js"></script>
-    <script src="../../js/pages/forms/form-wizard.js"></script>
+    <script src="../../js/pages/forms/basic-form-elements.js"></script>
 
     <!-- Demo Js -->
     <script src="../../js/demo.js"></script>
+
+    <script>
+       $('#aceptar').click(function(){
+       $('#aceptar').attr("disabled", true);
+    });f 
+
+    </script>
 </body>
 </html>

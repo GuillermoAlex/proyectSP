@@ -275,8 +275,8 @@
                     <img src="../../images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
-                    <div class="email">john.doe@example.com</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Francisco Franco</div>
+                    <div class="email">name@example.com</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
@@ -308,16 +308,10 @@
                             <span>Evaluar miembros</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="">
                         <a href="crearequipos.html">
                             <i class="material-icons">layers</i>
                             <span>Crear equipos</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="crearequipos2.html">
-                            <i class="material-icons">layers</i>
-                            <span>Crear equipos 2</span>
                         </a>
                     </li>            
                 </ul>
@@ -496,7 +490,7 @@
                             </h2>
                                 <div class="form-group form-group-sm">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Buscar" />
+                                        <input type="text" id="myInput" onkeyup="buscarPersonas()" class="form-control" placeholder="Buscar por nombres..." />
                                     </div>
                                 <ul class="header-dropdown m-r--5">
                                 <li>
@@ -517,76 +511,89 @@
                                 </ul>
                             </div>
                         </div>    
-                        <div class="body">
-                            <div class="list-group">
-
-                                <a class="list-group-item active" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <img class="media-object" src="userman.png" width="64" height="64">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Francisco Franco</h4>
-                                            <p>name@example.com<p> 
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <img class="media-object" src="userwoman.png" width="64" height="64">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Carolina Ferrada</h4>
-                                            <p>name@example.com<p> 
-                                        </div>
-                                    </div>
-
-                                </a>
-                               <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <img class="media-object" src="userman.png" width="64" height="64">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Cristián Arias</h4>
-                                            <p>name@example.com<p> 
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <img class="media-object" src="userman.png" width="64" height="64">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Carlos Rincon</h4>
-                                            <p>name@example.com<p> 
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <img class="media-object" src="userwoman.png" width="64" height="64">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Fernanda Rebolledo</h4>
-                                            <p>name@example.com<p> 
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <img class="media-object" src="userwoman.png" width="64" height="64">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">Barbara Agurto</h4>
-                                            <p>name@example.com<p> 
-                                        </div>
-                                    </div>
-                                </a>
+                        <div class="body" style="padding-top: 0px !important;">
+                            <div class="list-group" style="overflow-y:auto;max-height: 400px;">
+                                <ul id="myUL" style="padding-left: 0px !important;">
+                                    <li>
+                                        <a class="list-group-item active" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img class="media-object" src="userman.png" width="64" height="64">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Barbara Agurto</h4>
+                                                    <p>name@example.com<p> 
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>    
+                                        <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img class="media-object" src="userwoman.png" width="64" height="64">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Carlos Rincon</h4>
+                                                    <p>name@example.com<p> 
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                       <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img class="media-object" src="userman.png" width="64" height="64">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Carolina Ferrada</h4>
+                                                    <p>name@example.com<p> 
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>     
+                                        <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img class="media-object" src="userman.png" width="64" height="64">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Cristián Arias</h4>
+                                                    <p>name@example.com<p> 
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>     
+                                        <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img class="media-object" src="userwoman.png" width="64" height="64">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Fernanda Rebolledo</h4>
+                                                    <p>name@example.com<p> 
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!--
+                                    <li>     
+                                        <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img class="media-object" src="userwoman.png" width="64" height="64">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Francisco Franco</h4>
+                                                    <p>name@example.com<p> 
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>-->    
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -614,8 +621,8 @@
                             </ul>
                         </div>
                         <div class="body">
-                            <div class="panel-group" id="accordion_4" role="tablist" aria-multiselectable="true">
-                            <div class="collapse" id="collapseExample" data-parent="#accordion_4">
+                            <div class="panel-group" id="accordion_group" role="tablist" aria-multiselectable="true">
+                            <div class="collapse" id="collapseExample" data-parent="#accordion_1">
                                 <div class="well">                           
                                     <ul class="list-group">
                                         <a href="resistencia.html" class="list-group-item active">Resistencia<span class="badge bg-pink">pendiente</span></a>
@@ -624,7 +631,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="collapse" id="collapseExample1" data-parent="#accordion_4">
+                            <div class="collapse" id="collapseExample1" data-parent="#accordion_2">
                                 <div class="well">                           
                                     <ul class="list-group">
                                         <a href="resistencia.html" class="list-group-item active">Resistencia<span class="badge bg-pink">pendiente</span></a>
@@ -667,6 +674,32 @@
 
     <!-- Demo Js -->
     <script src="../../js/demo.js"></script>
+
+    <script>
+
+    var $myGroup = $('#accordion_group');
+    $myGroup.on('show.bs.collapse','.collapse', function() {
+        $myGroup.find('.collapse.in').collapse('hide');
+    });    
+
+    function buscarPersonas() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+
+            }
+        }
+    }
+    </script>
+
 </body>
 
 </html>

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Sortable & Nestable | Bootstrap Based Admin Template - Material Design</title>
+    <title>Advanced Form Elements | Bootstrap Based Admin Template - Material Design</title>
+
     <!-- Favicon-->
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
@@ -21,8 +22,26 @@
     <!-- Animation Css -->
     <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- JQuery Nestable Css -->
-    <link href="../../plugins/nestable/jquery-nestable.css" rel="stylesheet" />
+    <!-- Colorpicker Css -->
+    <link href="../../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
+
+    <!-- Dropzone Css -->
+    <link href="../../plugins/dropzone/dropzone.css" rel="stylesheet">
+
+    <!-- Multi Select Css -->
+    <link href="../../plugins/multi-select/css/multi-select.css" rel="stylesheet">
+
+    <!-- Bootstrap Spinner Css -->
+    <link href="../../plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+
+    <!-- Bootstrap Tagsinput Css -->
+    <link href="../../plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <!-- Bootstrap Select Css -->
+    <link href="../../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- noUISlider Css -->
+    <link href="../../plugins/nouislider/nouislider.min.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
@@ -278,8 +297,8 @@
                     <img src="../../images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
-                    <div class="email">john.doe@example.com</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Francisco Franco</div>
+                    <div class="email">name@example.com</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
@@ -295,7 +314,7 @@
                 </div>
             </div>
             <!-- #User Info -->
-             <!-- Menu -->
+           <!-- Menu -->
             <div class="menu">
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
@@ -312,15 +331,9 @@
                         </a>
                     </li>
                     <li class="active">
-                        <a href="">
+                        <a href="crearequipos.html">
                             <i class="material-icons">layers</i>
                             <span>Crear equipos</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="crearequipos2.html">
-                            <i class="material-icons">layers</i>
-                            <span>Crear equipos 2</span>
                         </a>
                     </li>            
                 </ul>            
@@ -487,118 +500,11 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>
-                    CREAR EQUIPOS
-                </h2>
+                <h2>CREAR EQUIPOS</h2>
             </div>
+            <!-- Multi Select -->
             <div class="row clearfix">
-                <!-- Default Example -->
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>
-                                Lista de personas
-                                <small>Description</small>
-                            </h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div class="clearfix m-b-20">
-                                <div class="dd">
-                                    <ol class="dd-list">
-                                        <li class="dd-item" data-id="2">
-                                            <div class="dd-handle">Veloces Alto</div>
-                                            <ol class="dd-list">
-                                                <li class="dd-item" data-id="3">
-                                                    <div class="dd-handle">
-                                                        <div class="media-left">
-                                                            <img class="media-object" src="userman.png" width="23" height="21">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h4 class="media-heading">Francisco Franco</h4>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="dd-item" data-id="4">
-                                                    <div class="dd-handle">
-                                                        <div class="media-left">
-                                                            <img class="media-object" src="userwoman.png" width="23" height="21">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h4 class="media-heading">Carolina Ferrada</h4>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ol>
-                                        </li>
-                                        <li class="dd-item" data-id="5">
-                                            <div class="dd-handle">Veloces Medio</div>
-                                            <ol class="dd-list">
-                                                <li class="dd-item" data-id="6">
-                                                    <div class="dd-handle">
-                                                        <div class="media-left">
-                                                            <img class="media-object" src="userman.png" width="23" height="21">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h4 class="media-heading">Cristián Arias</h4>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="dd-item" data-id="7">
-                                                    <div class="dd-handle">
-                                                        <div class="media-left">
-                                                            <img class="media-object" src="userman.png" width="23" height="21">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h4 class="media-heading">Carlos Rincon</h4>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ol>
-                                        </li>
-                                        <li class="dd-item" data-id="9">
-                                            <div class="dd-handle">Veloces Bajo</div>
-                                            <ol class="dd-list">
-                                                <li class="dd-item" data-id="10">
-                                                    <div class="dd-handle">
-                                                        <div class="media-left">
-                                                            <img class="media-object" src="userwoman.png" width="23" height="21">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h4 class="media-heading">Fernanda Rebolledo</h4>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="dd-item" data-id="11">
-                                                    <div class="dd-handle">
-                                                        <div class="media-left">
-                                                            <img class="media-object" src="userwoman.png" width="23" height="21">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h4 class="media-heading">Barbara Agurto</h4>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ol>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
                             <h2>
@@ -619,27 +525,39 @@
                             </ul>
                         </div>
                         <div class="body">
-                            <div class="clearfix m-b-20">
-                                <div class="dd nestable-dark-theme">
-                                    <ol class="dd-list">
-                                        <li class="dd-item" data-id="1">
-                                            
-                                        </li>
-                                    </ol>
-                                </div>
+                            <select id="optgroup" class="ms" multiple="multiple">
+                                
+                                <option value="AK">Francisco Franco</option>
+                                <option value="HI">Carolina Ferrada</option>
+                            
+                            
+                                <option value="CA">Cristián Arias</option>
+                                <option value="NV">Carlos Rincon</option>
+                           
+                        
+                                <option value="AZ">Fernanda Rebolledo</option>
+                                <option value="CO">Barbara Agurto</option>
+                                
+                            </select>
+                            <br>
+                            <br>
+                            <div style="text-align: center;">
+                            <a href="equipos.html" type="button" style="margin:auto; display:block; width: 100px;" class="btn btn-primary m-t-15 waves-effect">Crear equipos</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- #END# Default Example -->
             </div>
-                        <!-- Checkbox -->
+            <!-- #END# Multi Select -->
+
+            <!-- Advanced Select 
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
                             <h2>
-                                Generar team
+                                Opciones avanzadas
+                                <small>Description</small>
                             </h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
@@ -655,18 +573,58 @@
                             </ul>
                         </div>
                         <div class="body">
-                            <h2 class="card-inside-title">Opciones</h2>
-                            <div class="demo-checkbox">
-                                <input type="checkbox" id="basic_checkbox_1" checked />
-                                <label for="basic_checkbox_1">Default</label>
-                                <input type="checkbox" id="basic_checkbox_2" class="filled-in" checked />
-                                <label for="basic_checkbox_2">Filled In</label>
-                                <input type="checkbox" id="basic_checkbox_3" checked disabled />
-                                <label for="basic_checkbox_3">Default - Disabled</label>
-                                <input type="checkbox" id="basic_checkbox_4" class="filled-in" checked disabled />
-                                <label for="basic_checkbox_4">Filled In - Disabled</label>
+                            <div class="row clearfix">
+                                <div class="col-md-3">
+                                    <p>
+                                        <b>Nivel de Velocidad</b>
+                                    </p>
+                                    <select class="form-control show-tick">
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <p>
+                                        <b>Nivel de Técnica</b>
+                                    </p>
+                                    <select class="form-control show-tick">
+                                        <optgroup label="Picnic">
+                                            <option>Mustard</option>
+                                            <option>Ketchup</option>
+                                            <option>Relish</option>
+                                        </optgroup>
+                                        <optgroup label="Camping">
+                                            <option>Tent</option>
+                                            <option>Flashlight</option>
+                                            <option>Toilet Paper</option>
+                                        </optgroup>
+                                    </select>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <p>
+                                        <b>Nivel de Resistencia</b>
+                                    </p>
+                                    <select class="form-control show-tick" multiple>
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <p>
+                                        <b>Otros</b>
+                                    </p>
+                                    <select class="form-control show-tick" data-live-search="true">
+                                        <option>Hot Dog, Fries and a Soda</option>
+                                        <option>Burger, Shake and a Smile</option>
+                                        <option>Sugar, Spice and all things nice</option>
+                                    </select>
+                                </div>
                             </div>
-                            <br>
                             <form>
                                 <label for="email_address">Cantidad de equipos a generar</label>
                                 <div class="form-group">
@@ -681,9 +639,10 @@
                     </div>
                 </div>
             </div>
-            <!-- #END# Checkbox -->
+            #END# Advanced Select -->
         </div>
     </section>
+    
 
     <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
@@ -697,18 +656,44 @@
     <!-- Slimscroll Plugin Js -->
     <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
+    <!-- Bootstrap Colorpicker Js -->
+    <script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+
+    <!-- Dropzone Plugin Js -->
+    <script src="../../plugins/dropzone/dropzone.js"></script>
+
+    <!-- Input Mask Plugin Js -->
+    <script src="../../plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+
+    <!-- Multi Select Plugin Js -->
+    <script src="../../plugins/multi-select/js/jquery.multi-select.js"></script>
+
+    <!-- Jquery Spinner Plugin Js -->
+    <script src="../../plugins/jquery-spinner/js/jquery.spinner.js"></script>
+
+    <!-- Bootstrap Tags Input Plugin Js -->
+    <script src="../../plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+    <!-- noUISlider Plugin Js -->
+    <script src="../../plugins/nouislider/nouislider.js"></script>
+
     <!-- Waves Effect Plugin Js -->
     <script src="../../plugins/node-waves/waves.js"></script>
 
-    <!-- Jquery Nestable -->
-    <script src="../../plugins/nestable/jquery.nestable.js"></script>
-
     <!-- Custom Js -->
     <script src="../../js/admin.js"></script>
-    <script src="../../js/pages/ui/sortable-nestable.js"></script>
+    <script src="../../js/pages/forms/advanced-form-elements.js"></script>
 
     <!-- Demo Js -->
     <script src="../../js/demo.js"></script>
+
+    <script> 
+
+    $("#optgroup").html($("#optgroup option").sort(function (a, b) {
+        return a.text == b.text ? 0 : a.text < b.text ? -1 : 1
+    }))
+
+    </script>
 </body>
 
 </html>

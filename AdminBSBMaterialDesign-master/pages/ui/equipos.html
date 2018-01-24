@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Form Wizard | Bootstrap Based Admin Template - Material Design</title>
+    <title>Advanced Form Elements | Bootstrap Based Admin Template - Material Design</title>
+
     <!-- Favicon-->
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
@@ -21,8 +22,26 @@
     <!-- Animation Css -->
     <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Sweet Alert Css -->
-    <link href="../../plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+    <!-- Colorpicker Css -->
+    <link href="../../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
+
+    <!-- Dropzone Css -->
+    <link href="../../plugins/dropzone/dropzone.css" rel="stylesheet">
+
+    <!-- Multi Select Css -->
+    <link href="../../plugins/multi-select/css/multi-select.css" rel="stylesheet">
+
+    <!-- Bootstrap Spinner Css -->
+    <link href="../../plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+
+    <!-- Bootstrap Tagsinput Css -->
+    <link href="../../plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <!-- Bootstrap Select Css -->
+    <link href="../../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- noUISlider Css -->
+    <link href="../../plugins/nouislider/nouislider.min.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
@@ -278,8 +297,8 @@
                     <img src="../../images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
-                    <div class="email">john.doe@example.com</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Francisco Franco</div>
+                    <div class="email">name@example.com</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
@@ -299,30 +318,25 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
-                     <li>
+                    <li>
                         <a href="../../home.html">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="">
+                    <li>
+                        <a href="evaluar.html">
                             <i class="material-icons">text_fields</i>
                             <span>Evaluar miembros</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="crearequipos.html">
                             <i class="material-icons">layers</i>
                             <span>Crear equipos</span>
                         </a>
-                    </li>
-                    <li class="">
-                        <a href="crearequipos2.html">
-                            <i class="material-icons">layers</i>
-                            <span>Crear equipos 2</span>
-                        </a>
-                    </li>         
+                    </li>            
+                </ul>            
                 </ul>
             </div>
             <!-- #Menu -->
@@ -486,16 +500,17 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>
-                    EVALUAR MIEMBROS
-                </h2>
+                <h2>CREAR EQUIPOS</h2>
             </div>
-            <!-- Basic Example | Horizontal Layout -->
+            <!-- Multi Select -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>EVALUACIÓN DE TÉCNICA</h2>
+                            <h2>
+                                Equipos creados
+                                <small>Description</small>
+                            </h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -510,60 +525,168 @@
                             </ul>
                         </div>
                         <div class="body">
-                            <div id="wizard_horizontal">
-                                <h2>Conocimiento</h2>
-                                <section>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas
-                                        arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea
-                                        dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus
-                                        dolor, tristique ac tempus nec, iaculis quis nisi.
-                                    </p>
-                                </section>
-
-                                <h2>Resolución de problemas</h2>
-                                <section>
-                                    <p>
-                                        Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac
-                                        ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi
-                                        tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum,
-                                        nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien
-                                        a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum
-                                        arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
-                                        velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
-                                        iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.
-                                    </p>
-                                </section>
-
-                                <h2>Observación</h2>
-                                <section>
-                                    <p>
-                                        Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo
-                                        condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam.
-                                        Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat.
-                                        Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui
-                                        commodo lectus sollicitudin in auctor mauris venenatis.
-                                    </p>
-                                </section>
-
-                                <h2>Interrogatorio</h2>
-                                <section>
-                                    <p>
-                                        Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula
-                                        vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec
-                                        ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae.
-                                        Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo
-                                        tortor.
-                                    </p>
-                                </section>
-                            </div>
+                        <div class="row clearfix">
+                <!-- Basic Examples -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                Equipo 1
+                            </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Barbara Agurto</li>
+                                <li class="list-group-item">Carlos Rincon</li>
+                                <li class="list-group-item">Carolina Ferrada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- #END# Basic Examples -->
+                <!-- Badges -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                Equipo 2
+                            </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Cristián Arias</li>
+                                <li class="list-group-item">Fernanda Rebolledo</li>
+                                <li class="list-group-item">Francisco Franco</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- #END# Badges -->
+            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- #END# Basic Example | Horizontal Layout -->
+            <!-- #END# Multi Select -->
+
+            <!-- Advanced Select 
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                Opciones avanzadas
+                                <small>Description</small>
+                            </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-md-3">
+                                    <p>
+                                        <b>Nivel de Velocidad</b>
+                                    </p>
+                                    <select class="form-control show-tick">
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <p>
+                                        <b>Nivel de Técnica</b>
+                                    </p>
+                                    <select class="form-control show-tick">
+                                        <optgroup label="Picnic">
+                                            <option>Mustard</option>
+                                            <option>Ketchup</option>
+                                            <option>Relish</option>
+                                        </optgroup>
+                                        <optgroup label="Camping">
+                                            <option>Tent</option>
+                                            <option>Flashlight</option>
+                                            <option>Toilet Paper</option>
+                                        </optgroup>
+                                    </select>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <p>
+                                        <b>Nivel de Resistencia</b>
+                                    </p>
+                                    <select class="form-control show-tick" multiple>
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <p>
+                                        <b>Otros</b>
+                                    </p>
+                                    <select class="form-control show-tick" data-live-search="true">
+                                        <option>Hot Dog, Fries and a Soda</option>
+                                        <option>Burger, Shake and a Smile</option>
+                                        <option>Sugar, Spice and all things nice</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <form>
+                                <label for="email_address">Cantidad de equipos a generar</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="cantequip" class="form-control" placeholder="Ingresar cantidad de equipos">
+                                    </div>
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-primary m-t-15 waves-effect">Crear equipos</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            #END# Advanced Select -->
         </div>
     </section>
+    
 
     <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
@@ -577,23 +700,44 @@
     <!-- Slimscroll Plugin Js -->
     <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
-    <!-- Jquery Validation Plugin Css -->
-    <script src="../../plugins/jquery-validation/jquery.validate.js"></script>
+    <!-- Bootstrap Colorpicker Js -->
+    <script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
 
-    <!-- JQuery Steps Plugin Js -->
-    <script src="../../plugins/jquery-steps/jquery.steps.js"></script>
+    <!-- Dropzone Plugin Js -->
+    <script src="../../plugins/dropzone/dropzone.js"></script>
 
-    <!-- Sweet Alert Plugin Js -->
-    <script src="../../plugins/sweetalert/sweetalert.min.js"></script>
+    <!-- Input Mask Plugin Js -->
+    <script src="../../plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+
+    <!-- Multi Select Plugin Js -->
+    <script src="../../plugins/multi-select/js/jquery.multi-select.js"></script>
+
+    <!-- Jquery Spinner Plugin Js -->
+    <script src="../../plugins/jquery-spinner/js/jquery.spinner.js"></script>
+
+    <!-- Bootstrap Tags Input Plugin Js -->
+    <script src="../../plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+    <!-- noUISlider Plugin Js -->
+    <script src="../../plugins/nouislider/nouislider.js"></script>
 
     <!-- Waves Effect Plugin Js -->
     <script src="../../plugins/node-waves/waves.js"></script>
 
     <!-- Custom Js -->
     <script src="../../js/admin.js"></script>
-    <script src="../../js/pages/forms/form-wizard.js"></script>
+    <script src="../../js/pages/forms/advanced-form-elements.js"></script>
 
     <!-- Demo Js -->
     <script src="../../js/demo.js"></script>
+
+    <script> 
+
+    $("#optgroup").html($("#optgroup option").sort(function (a, b) {
+        return a.text == b.text ? 0 : a.text < b.text ? -1 : 1
+    }))
+
+    </script>
 </body>
+
 </html>
