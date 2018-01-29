@@ -427,43 +427,43 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2><button type="button" class="btn btn-default waves-effect js-right-sidebar" data-close="true" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="material-icons">view_list</i>
-                                        </button>EVALUACIÓN DE VELOCIDAD</h2>
+                            <h2>EVALUACIÓN DE VELOCIDAD</h2>
                             <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
-                                </li>
+                                <button type="button" class="btn btn-default waves-effect js-right-sidebar" data-close="true" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">view_list</i>
+                                </button>
                             </ul>
                         </div>
                        <div class="body">
-                           <h2>Velocidad</h2>
-                           <p>En una escala del <strong>1 al 10</strong> ¿Qué ponderación usted considera para esta persona en esta habilidad?.</p>
-                            <select class="form-control show-tick">
-                                        <option value="">-- 1-10 --</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                            </select>
-                            <br>
-                            <br>
-                            <div style="text-align: center;">
-                            <button id="aceptar" type="button" style="margin:auto; display:block;" class="btn btn-primary m-t-15 waves-effect">Aceptar</button>
-                        </div>
+                            <div class="row clearfix">
+                                <h2> 
+                                    <div class="col-md-2">Velocidad</div>
+                                    <div class="col-md-2">
+                                        <select id="idponderaciones" class="form-control show-tick">
+                                                    <option value="">-- 1-10 --</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-9">
+                                    </div>
+                                </h2>
+                                <div class="col-md-12">
+                                    <p>En una escala del <strong>1 al 10</strong> ¿Qué ponderación usted considera para esta persona en esta habilidad?.</p>
+                               </div>
+
+                                <div class="col-md-12" style="text-align: center;">
+                                    <button id="aceptar" type="button" style="margin:auto; display:block;" class="btn btn-primary m-t-15 waves-effect">Aceptar</button>
+                                </div>
+                            </div>        
                         </div>
                     </div>
                 </div>
@@ -506,7 +506,8 @@
     <script>
        $('#aceptar').click(function(){
        $('#aceptar').attr("disabled", true);
-    });f 
+       $('#idponderaciones').attr("disabled", true);
+    });
 
     </script>
 </body>
